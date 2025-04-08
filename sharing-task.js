@@ -30,6 +30,10 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Takes a name and a role (e.g., "Alice", "speaker")
 // - Returns a string in the format: "Name: Alice, Role: Speaker"
 
+function attendeeBadge(name, role) {
+    console.log("Name: ${name}, Role: ${role}")
+}
+
 // Steps:
 // 1. Define the function with two parameters.
 // 2. Format the output string properly.
@@ -89,3 +93,40 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
+
+//Task 2: Calculate Event Cost
+
+//Task 1: Generate Badge
+
+function attendeeBadge(name, role) {
+    console.log(`Name: ${name}, Role: ${role}`);
+  }
+  
+  attendeeBadge('Savion', 'student');
+
+
+function calculateCost(totalAttendees, costPA) {
+    let cost = totalAttendees * costPA;
+  
+    if (getsDiscount(totalAttendees)) {
+      cost *= .9;
+    }
+  
+    return cost;
+  }
+  function getsDiscount(totalAttendees) {
+    return (totalAttendees > 100);
+  }
+  
+  let totalCost = calculateCost(100, 25);
+  console.log(totalCost);
+
+  //Task 3: Validate Email
+const readline = require('readline-sync');
+let userEmail = readline.question("Enter your email: ");
+
+function validateEmail(email) {
+  return email.includes('@') && email.includes('.');
+}
+console.log(validateEmail(userEmail));
+
