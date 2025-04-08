@@ -98,10 +98,11 @@ function attendeeBadge(name, role) {
 
 //Task 1: Generate Badge
 
+
+  //Task 1: Generate Badge
 function attendeeBadge(name, role) {
-    console.log(`Name: ${name}, Role: ${role}`);
+    console.log(`Name: ${name}, Role: ${role.toUpperCase().charAt(0)}${role.slice(1)}`);
   }
-  
   attendeeBadge('Savion', 'student');
 
 
